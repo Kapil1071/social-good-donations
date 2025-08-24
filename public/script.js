@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 2. Open Razorpay Checkout
             const options = {
-                key: "[YOUR_RAZORPAY_KEY_ID]", // Get this from your Razorpay Dashboard
+                key: "rzp_test_R97BJt5cOtiIX8", // Get this from your Razorpay Dashboard
                 amount: orderData.amount,
                 currency: "INR",
                 name: "Social Good Donations",
