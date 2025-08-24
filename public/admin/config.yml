@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "settings"
+    label: "Page Settings"
+    files:
+      - file: "public/_data/settings.json"
+        label: "Main Page Content"
+        name: "main_content"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Sub-headline", name: "subheadline", widget: "text" }
+          - { label: "Donation Plea", name: "donation_plea", widget: "text" }
+          - { label: "Impact Stat 1 - Value", name: "stat1_value", widget: "string" }
+          - { label: "Impact Stat 1 - Label", name: "stat1_label", widget: "string" }
+          - { label: "Impact Stat 2 - Value", name: "stat2_value", widget: "string" }
+          - { label: "Impact Stat 2 - Label", name: "stat2_label", widget: "string" }
+          - { label: "Impact Stat 3 - Value", name: "stat3_value", widget: "string" }
+          - { label: "Impact Stat 3 - Label", name: "stat3_label", widget: "string" }

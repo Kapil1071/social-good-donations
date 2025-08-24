@@ -1,0 +1,4 @@
+[build]
+  command = "pip install -r netlify/functions/create-order/requirements.txt && pip install -r netlify/functions/verify-payment/requirements.txt && pip install -r netlify/functions/send-thank-you/requirements.txt"
+  publish = "public"
+  functions = "netlify/functions"

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Our Cause | Social Good Donations</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="hero-content">
+                <h1 id="cms-headline">[CMS_HEADLINE]</h1>
+                <p id="cms-subheadline">[CMS_SUBHEADLINE]</p>
+            </div>
+        </header>
+
+        <main>
+            <section class="impact-section">
+                <h2>Our Impact, Together</h2>
+                <div class="impact-cards">
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-seedling"></i></div>
+                        <h3 id="cms-stat1-value">[STAT_1_VALUE]</h3>
+                        <p id="cms-stat1-label">[STAT_1_LABEL]</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h3 id="cms-stat2-value">[STAT_2_VALUE]</h3>
+                        <p id="cms-stat2-label">[STAT_2_LABEL]</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-globe-americas"></i></div>
+                        <h3 id="cms-stat3-value">[STAT_3_VALUE]</h3>
+                        <p id="cms-stat3-label">[STAT_3_LABEL]</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="donation-section">
+                <h2>Make a Difference Today</h2>
+                <p id="cms-donation-plea">[CMS_DONATION_PLEA]</p>
+                <form id="donation-form">
+                    <div class="amount-selector">
+                        <button class="amount-btn" data-amount="1000">₹1000</button>
+                        <button class="amount-btn active" data-amount="2500">₹2500</button>
+                        <button class="amount-btn" data-amount="5000">₹5000</button>
+                    </div>
+                    <input type="number" id="custom-amount" placeholder="Or enter a custom amount (INR)">
+                    <input type="email" id="donor-email" placeholder="Your Email Address" required>
+                    <input type="text" id="donor-name" placeholder="Your Name" required>
+                    <button type="submit" id="donate-btn">Donate Now</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <div id="success-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <i class="fas fa-check-circle"></i>
+            <h2>Thank You!</h2>
+            <p>Your generous donation has been received. A personalized summary of your impact is on its way to your inbox.</p>
+            <button id="close-modal-btn">Close</button>
+        </div>
+    </div>
+    
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

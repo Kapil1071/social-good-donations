@@ -1,0 +1,2 @@
+google-generativeai
+# You would add 'sendgrid' here if you implement email sending.
